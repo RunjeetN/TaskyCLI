@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/TaskyCLI_RunjeetNarula.egg-info/PKG-INFO
+src/TaskyCLI_RunjeetNarula.egg-info/SOURCES.txt
+src/TaskyCLI_RunjeetNarula.egg-info/dependency_links.txt
+src/TaskyCLI_RunjeetNarula.egg-info/entry_points.txt
+src/TaskyCLI_RunjeetNarula.egg-info/requires.txt
+src/TaskyCLI_RunjeetNarula.egg-info/top_level.txt
+src/tasky/__init__.py
+src/tasky/__main__.py
+src/tasky/tasky.py
