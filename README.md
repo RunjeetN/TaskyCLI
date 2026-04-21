@@ -8,6 +8,11 @@ A CLI app for managing tasks.
 pip install TaskyCLI_RunjeetNarula
 ```
 
+### Example Usage
+```python
+tasky --help
+```
+
 ## Commands
 - add <description>
 - update <id>
