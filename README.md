@@ -1,4 +1,4 @@
-# My CLI Task Tracker tool
+# TASKY
 
 ## Goal
 A CLI app for managing tasks. 
