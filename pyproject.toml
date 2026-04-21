@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tasky"
+version = "0.0.1"
+description = "A CLI tool for managing tasks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["click"]
+
+[project.scripts]
+tasky = "tasky.tasky:cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.briefcase]
+project_name = "Tasky"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/YOUR_USERNAME/tasky"
+license.file = "LICENSE"
+
+[tool.briefcase.app.tasky]
+formal_name = "Tasky"
+description = "A CLI tool for managing tasks"
+sources = ["src/tasky"]
+console_app = true
+requires = ["click"]

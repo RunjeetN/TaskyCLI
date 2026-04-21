@@ -2,15 +2,20 @@ import click
 import json
 from pathlib import Path
 
-file_path = './tasks.JSON' 
+file_path = Path(__file__).with_name("tasks.JSON")
 
 def setup() -> None:
     # create file & write starter info on first install
-    with open(file_path, "r+") as file:
-        if Path(file_path).stat().st_size < 56:
-            json.dump({"nextId":1, "done": {}, "todo": {}, "in-progress": {}}, file)
-            click.echo('setup template file')
-            click.echo('Let\'s get something done!')
+    if not file_path.exists():
+        with open(file_path, "w") as file:
+            json.dump({"nextId": 1, "done": {}, "todo": {}, "in-progress": {}}, file)
+        click.echo("setup template file")
+        click.echo("Let's get something done!")
+        return
+
+    if file_path.stat().st_size == 0:
+        with open(file_path, "w") as file:
+            json.dump({"nextId": 1, "done": {}, "todo": {}, "in-progress": {}}, file)
         
 @click.group()
 def cli() -> None:
@@ -187,6 +192,3 @@ cli.add_command(mark_in_progress)
 cli.add_command(mark_done)
 cli.add_command(list_tasks)
 
-# TODO: replace with toml entrypoint 
-if __name__ == '__main__':
-    cli()
