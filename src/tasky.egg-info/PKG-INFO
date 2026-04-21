@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: tasky
+Version: 0.0.1
+Summary: A CLI tool for managing tasks
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Dynamic: license-file
+
+# My CLI Task Tracker tool
+
+## Goal
+A CLI app for managing tasks. 
+
+## Commands
+- add <description>
+- update <id>
+- delete <id>
+- mark-in-progress <id>
+- mark-done <id>
+- list [OPTIONS]
+    --done
+    --todo
+    --in-progress
+
+
