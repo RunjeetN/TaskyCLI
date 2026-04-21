@@ -3,6 +3,11 @@
 ## Goal
 A CLI app for managing tasks. 
 
+###Install with
+```python
+pip install TaskyCLI_RunjeetNarula
+```
+
 ## Commands
 - add <description>
 - update <id>
