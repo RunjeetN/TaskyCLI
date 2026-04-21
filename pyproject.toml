@@ -23,7 +23,7 @@ where = ["src"]
 project_name = "Tasky"
 bundle = "com.example"
 version = "0.0.1"
-url = "https://github.com/YOUR_USERNAME/tasky"
+url = "https://github.com/RunjeetN/taskyCLI"
 license.file = "LICENSE"
 
 [tool.briefcase.app.tasky]
